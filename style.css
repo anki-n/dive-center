@@ -1,0 +1,104 @@
+
+/*  NOTES
+- fonts:
+    - 
+- Colors:
+    - 
+- Map: 
+
+*/
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+[class*="col-"] { padding: 0; }
+[class*="grid"] { 
+    margin: 0;
+    padding: 0; 
+}
+
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: inherit;
+}
+
+
+/*  Temporary Styles */
+
+* {
+    padding: 0.5rem;
+    border: 2px solid rgb(200,200,200);
+} 
+
+html, 
+body {
+    border: none;
+} 
+
+h1,h2,h3,h4,h5,h6,p, a {
+    border: 2px solid green;
+} 
+
+img {
+    border: 2px solid blue;
+} 
+
+a { border: 1px solid orange; }
+
+
+/* Re-usable Utiity Classes  */
+
+.tall-20 { min-height: 20vh; }
+.tall-50 { min-height: 50vh; }
+.tall-60 { min-height: 60vh; }
+.tall-70 { min-height: 70vh; }
+.tall-80 { min-height: 80vh; }
+.tall-90 { min-height: 90vh; }
+
+
+.padded    { padding: 5%;    }
+.padded-1  { padding: 1rem;  }
+.padded-2  { padding: 2rem;  }
+
+.margin-b-0 { margin-bottom: 0; }
+
+
+.bg-featured { background-color: #018ca2;  }
+.bg-dark     { background-color: #24282B;  }
+
+.light-text { color: white; } 
+
+
+.left   { text-align: left; }
+.center { text-align: center; }
+.right  { text-align: right; }
+
+
+/* General typography & universal styles  */
+
+
+/* Header & Footer */
+
+
+/* Images & Background Images */
+
+
+
+/* Gridlex Media Queries 
+  @media (max-width: 36em)  Max 576px 	_xs-*
+  @media (max-width: 48em)  Max 768px 	_sm-*
+  @media (max-width: 64em)  Max 1024px  _md-*
+  @media (max-width: 80em)  Max 1280px  _lg-*
+*/
+
