@@ -61,6 +61,7 @@ a { border: 1px solid orange; }
 
 .tall-20 { min-height: 20vh; }
 .tall-50 { min-height: 50vh; }
+.tall-52 { min-height: 52vh; }
 .tall-60 { min-height: 60vh; }
 .tall-70 { min-height: 70vh; }
 .tall-80 { min-height: 80vh; }
@@ -92,6 +93,18 @@ a { border: 1px solid orange; }
 
 
 /* Images & Background Images */
+.bg-image {
+    background-image: url('/images/underwater-2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.divers { background-image: url('/images/divers.jpg'); }
+
+.underwater-1 { background-image: url('/images/underwater-1.jpg'); }
+.underwater-2 { background-image: url('/images/underwater-2.jpg'); }
+.underwater-3 { background-image: url('/images/underwater-3.jpg'); }
 
 
 
