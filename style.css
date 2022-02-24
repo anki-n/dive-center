@@ -3,7 +3,7 @@
 - fonts:
     - 
 - Colors:
-    - 
+    - Blue - medium: #0a1e4f
 - Map: 
 
 */
@@ -35,7 +35,7 @@ a {
 
 
 /*  Temporary Styles */
-
+/*
 * {
     padding: 0.5rem;
     border: 2px solid rgb(200,200,200);
@@ -44,6 +44,7 @@ a {
 html, 
 body {
     border: none;
+    padding: 0;
 } 
 
 h1,h2,h3,h4,h5,h6,p, a {
@@ -57,6 +58,7 @@ img {
 a { border: 1px solid orange; }
 
 
+
 /* Re-usable Utiity Classes  */
 
 .tall-20 { min-height: 20vh; }
@@ -68,28 +70,96 @@ a { border: 1px solid orange; }
 .tall-90 { min-height: 90vh; }
 
 
+
 .padded    { padding: 5%;    }
 .padded-1  { padding: 1rem;  }
 .padded-2  { padding: 2rem;  }
 
+
+.margin-1 { margin: 1rem; }
+
 .margin-b-0 { margin-bottom: 0; }
+.margin-b-1 { margin-bottom: 1rem; }
+
+.padded-t-b-03 { padding: 0.3rem 0; }
+.padded-t-b-1 { padding: 1rem 0; }
+.padded-t-b-2 { padding: 2rem 0; }
+
+.padded-b-1 { padding-bottom: 1rem; } 
 
 
 .bg-featured { background-color: #018ca2;  }
-.bg-dark     { background-color: #24282B;  }
+.bg-dark     { background-color: #08173e;  }
+.bg-light     { background-color: #d6f2f9;  }
+
+.subtle { 
+    font-size: 0.8rem;
+    color: rgb(218, 216, 216); 
+}
 
 .light-text { color: white; } 
+
+.big-text    { font-size: 4.5rem; }
+.medium-text { font-size: 2rem; }
 
 
 .left   { text-align: left; }
 .center { text-align: center; }
 .right  { text-align: right; }
 
+.button {
+    border: 1px solid gold;
+    border-radius: 10px;
+    padding: 2% 5%; 
+    color: gold;
+    background-color: white;
+}
+
+.square { background-size: 100%; }
+
+.button:hover {
+    color: white;
+    background-color: gold;
+}
+
+
 
 /* General typography & universal styles  */
+body {
+    font-size: 1.1rem;
+}
 
+
+h1 {
+    font-size: 3rem;
+}
+
+p { 
+    line-height: 1.4; 
+    margin-bottom: 1rem;
+}
+
+p:last-child { margin-bottom: 0; }
+
+li { 
+    margin-left: 1.5rem; 
+    line-height: 1.6;
+}
 
 /* Header & Footer */
+header nav a {
+    border-top: 1px solid #08173e; 
+    border-bottom: 1px solid #08173e; 
+}
+
+header nav a:hover {
+    border-top: 1px solid white; 
+    border-bottom: 1px solid white; 
+}
+
+footer a:hover {
+    color: gold;
+}
 
 
 /* Images & Background Images */
