@@ -72,9 +72,10 @@ a { border: 1px solid orange; }
 
 .padded-0  { padding: 0; }
 .padded    { padding: 5%;    }
-.padded-05  { padding: 0.5rem; }
+.padded-05 { padding: 0.5rem; }
 .padded-1  { padding: 1rem;  }
 .padded-2  { padding: 2rem;  }
+
 
 
 .margin-1 { margin: 1rem; }
@@ -87,6 +88,8 @@ a { border: 1px solid orange; }
 .padded-t-b-1 { padding: 1rem 0; }
 .padded-t-b-2 { padding: 2rem 0; }
 
+.padded-t-0 { padding-top: 0; }
+.padded-b-0 { padding-bottom: 0; }
 .padded-b-1 { padding-bottom: 1rem; } 
 
 
@@ -136,6 +139,10 @@ h1 {
     font-size: 3rem;
 }
 
+h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+}
+
 p { 
     line-height: 1.4; 
     margin-bottom: 1rem;
@@ -143,10 +150,12 @@ p {
 
 p:last-child { margin-bottom: 0; }
 
+
 li { 
     margin-left: 1.5rem; 
     line-height: 1.6;
 }
+
 
 /* Header & Footer */
 header nav a {
