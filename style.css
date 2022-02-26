@@ -3,7 +3,9 @@
 - fonts:
     - 
 - Colors:
-    - Blue - medium: #0a1e4f
+    - Blue - dark: #06112d
+    - Blue - light: #e7f7fc
+    - Orange: #ffda14
 - Map: 
 
 */
@@ -16,7 +18,7 @@
     box-sizing: border-box;
 }
 
-[class*="col-"] { padding: 0; }
+
 [class*="grid"] { 
     margin: 0;
     padding: 0; 
@@ -62,10 +64,13 @@ a { border: 1px solid orange; }
 /* Re-usable Utiity Classes  */
 
 .tall-20 { min-height: 20vh; }
+.tall-30 { min-height: 30vh; }
+.tall-40 { min-height: 40vh; }
 .tall-50 { min-height: 50vh; }
 .tall-52 { min-height: 52vh; }
 .tall-60 { min-height: 60vh; }
 .tall-70 { min-height: 70vh; }
+.tall-75 { min-height: 75vh; }
 .tall-80 { min-height: 80vh; }
 .tall-90 { min-height: 90vh; }
 
@@ -82,20 +87,28 @@ a { border: 1px solid orange; }
 .margin-l-1 { margin-left: 1rem; }
 
 .margin-b-0 { margin-bottom: 0; }
+.margin-t-1 { margin-top: 1rem; }
 .margin-b-1 { margin-bottom: 1rem; }
+.margin-t-b-1 { 
+    margin-top: 1rem;
+    margin-bottom: 1rem; 
+}
 
 .padded-t-b-03 { padding: 0.3rem 0; }
 .padded-t-b-1 { padding: 1rem 0; }
 .padded-t-b-2 { padding: 2rem 0; }
 
-.padded-t-0 { padding-top: 0; }
-.padded-b-0 { padding-bottom: 0; }
-.padded-b-1 { padding-bottom: 1rem; } 
+.padded-t-0     { padding-top: 0; }
+.padded-t-1     { padding-top: 1rem; }
+.padded-t-05    { padding-top: 0.5rem; }
+.padded-r-05    { padding-right: 0.5rem; }
+.padded-b-0     { padding-bottom: 0; }
+.padded-b-1     { padding-bottom: 1rem; } 
 
 
-.bg-featured { background-color: #018ca2;  }
-.bg-dark     { background-color: #08173e;  }
-.bg-light     { background-color: #d6f2f9;  }
+.bg-featured { background-color:  #ffda14;  }
+.bg-dark     { background-color: #06112d;  }
+.bg-light     { background-color: #e7f7fc;  }
 
 .subtle { 
     font-size: 0.8rem;
@@ -103,9 +116,17 @@ a { border: 1px solid orange; }
 }
 
 .light-text { color: white; } 
+.featured-text { color: #ffda14;}
 
-.big-text    { font-size: 4.5rem; }
-.medium-text { font-size: 2rem; }
+.big-text    { 
+    font-size: 5rem; 
+    font-weight: 700;
+}
+
+.medium-text { 
+    font-size: 3rem;
+    font-weight: 500; 
+}
 
 
 .left   { text-align: left; }
@@ -113,34 +134,68 @@ a { border: 1px solid orange; }
 .right  { text-align: right; }
 
 .button {
-    border: 1px solid gold;
+    border: 1px solid #06112d;
     border-radius: 10px;
     padding: 2% 5%; 
-    color: gold;
-    background-color: white;
+    color: white;
+    background-color: #06112d;
 }
 
 .square { background-size: 100%; }
 
 .button:hover {
-    color: white;
-    background-color: gold;
+    color: #06112d;
+    background-color: #e7f7fc;;
 }
 
+.logo {
+    font-family: 'Alex Brush', cursive;
+    font-weight: 100;
+}
+
+.border-t-b {
+    border-top: 1px solid white; 
+    border-bottom: 1px solid white; 
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
 
 
 /* General typography & universal styles  */
 body {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
 }
 
 
 h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
+    font-family: 'Alex Brush', cursive;
+    font-weight: 100;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
 }
 
 h2, h3, h4, h5, h6 {
     margin-bottom: 1rem;
+}
+
+.text-2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.text-3 {
+    font-size: 3rem;
+    font-weight: 700;
 }
 
 p { 
@@ -153,7 +208,7 @@ p:last-child { margin-bottom: 0; }
 
 li { 
     margin-left: 1.5rem; 
-    line-height: 1.6;
+    line-height: 1.8;
 }
 
 
@@ -169,12 +224,14 @@ header nav a:hover {
 }
 
 footer a:hover {
-    color: gold;
+    color: #d6f1fa;
 }
 
 
 /* Images & Background Images */
 .bg-padded { padding-bottom: 50%; }
+.bg-padded-portrait { padding-bottom: 100%; }
+.bg-padded-square { padding-bottom: 15%; }
 .bg-padded-30 { padding-bottom: 30%; }
 .bg-padded-90 { padding-bottom: 90%; }
 
@@ -191,6 +248,49 @@ footer a:hover {
 .underwater-2 { background-image: url('/images/underwater-2.jpg'); }
 .underwater-3 { background-image: url('/images/underwater-3.jpg'); }
 
+.catherine  { background-image: url('/images/Catherine.jpg'); }
+.tim        { background-image: url('/images/tim.jpg'); }  
+.hannah     { background-image: url('/images/Hannah.jpg'); }
+.girl       { background-image: url('/images/girl.jpg'); }
+.dive-buddies    { background-image: url('/images/dive-buddies.jpg'); }
+
+.bike { 
+    background-image: url('/images/bike.jpg'); 
+    background-position: 20% 70%;
+}
+
+
+/* Contact form */
+form input, 
+form textarea {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: 2px solid rgb(220,220,220);
+  outline: none;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+
+form input:focus,
+form textarea:focus {
+  border-color: #06112d;
+}
+
+form textarea {
+  min-height: 4rem;
+  resize: vertical;
+}
+
+form button {
+  background-color: #06112d;;
+  color: white;
+  border: none;
+  padding: 0.5rem 2rem;
+  letter-spacing: 0.1em;
+  margin: 0.5rem 0;
+}
 
 
 /* Gridlex Media Queries 
