@@ -101,10 +101,13 @@ a { border: 1px solid orange; }
 .padded-t-0     { padding-top: 0; }
 .padded-t-1     { padding-top: 1rem; }
 .padded-t-05    { padding-top: 0.5rem; }
+.padded-l-05    { padding-left: 0.5rem; }
 .padded-r-05    { padding-right: 0.5rem; }
 .padded-b-0     { padding-bottom: 0; }
 .padded-b-1     { padding-bottom: 1rem; } 
 
+.border-l { border-left: 0.5px solid white; }
+.border-r { border-right: 0.5px solid white; }
 
 .bg-featured { background-color:  #ffda14;  }
 .bg-dark     { background-color: #06112d;  }
@@ -188,6 +191,11 @@ h2, h3, h4, h5, h6 {
     margin-bottom: 1rem;
 }
 
+.text-1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
 .text-2 {
     font-size: 2.5rem;
     font-weight: 500;
@@ -214,8 +222,8 @@ li {
 
 /* Header & Footer */
 header nav a {
-    border-top: 1px solid #08173e; 
-    border-bottom: 1px solid #08173e; 
+    border-top: 1px solid #06112d; 
+    border-bottom: 1px solid #06112d; 
 }
 
 header nav a:hover {
@@ -243,6 +251,9 @@ footer a:hover {
 }
 
 .divers { background-image: url('/images/divers.jpg'); }
+.map        { background-image: url('/images/map.png'); }  
+.jellyfish        { background-image: url('/images/jellyfish.jpg'); } 
+.jellyfish-2      { background-image: url('/images/jellyfish-2.jpg'); } 
 
 .underwater-1 { background-image: url('/images/underwater-1.jpg'); }
 .underwater-2 { background-image: url('/images/underwater-2.jpg'); }
