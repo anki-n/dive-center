@@ -236,8 +236,21 @@ footer a:hover {
 }
 
 
+/* Prices */
+.prices p {
+    margin-top: 0.1rem;
+    font-size: 0.9rem;
+}
+
+.prices h3 {
+	margin: 1rem 0;
+}
+
+
 /* Images & Background Images */
 .bg-padded { padding-bottom: 50%; }
+.bg-padded-1 { padding-bottom: 74%; }
+.bg-padded-2 { padding-bottom: 72%; }
 .bg-padded-portrait { padding-bottom: 100%; }
 .bg-padded-square { padding-bottom: 15%; }
 .bg-padded-30 { padding-bottom: 30%; }
@@ -252,12 +265,20 @@ footer a:hover {
 
 .divers { background-image: url('/images/divers.jpg'); }
 .map        { background-image: url('/images/map.png'); }  
+.snorkeling   { background-image: url('/images/snorkeling.jpg'); } 
+.freediving  { background-image: url('/images/freediving-1.jpg'); }  
+.scuba-tank   { background-image: url('/images/scuba-tank.jpg'); }  
 .jellyfish        { background-image: url('/images/jellyfish.jpg'); } 
 .jellyfish-2      { background-image: url('/images/jellyfish-2.jpg'); } 
+.yellow-fish    { background-image: url('/images/yellow-fish.jpg'); } 
 
 .underwater-1 { background-image: url('/images/underwater-1.jpg'); }
 .underwater-2 { background-image: url('/images/underwater-2.jpg'); }
 .underwater-3 { background-image: url('/images/underwater-3.jpg'); }
+.underwater-light { 
+    background-image: url('/images/underwater-light.jpg'); 
+    background-position: 50% 70%;
+}
 
 .catherine  { background-image: url('/images/Catherine.jpg'); }
 .tim        { background-image: url('/images/tim.jpg'); }  
