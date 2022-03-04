@@ -82,13 +82,15 @@ a { border: 1px solid orange; }
 .padded-2  { padding: 2rem;  }
 
 
+.margin-b-0 { margin-bottom: 0; }
 
 .margin-1 { margin: 1rem; }
-.margin-l-1 { margin-left: 1rem; }
 
-.margin-b-0 { margin-bottom: 0; }
+.margin-l-1 { margin-left: 1rem; }
+.margin-r-1 { margin-right: 1rem; }
 .margin-t-1 { margin-top: 1rem; }
 .margin-b-1 { margin-bottom: 1rem; }
+
 .margin-t-b-1 { 
     margin-top: 1rem;
     margin-bottom: 1rem; 
@@ -97,21 +99,48 @@ a { border: 1px solid orange; }
 .padded-t-b-03 { padding: 0.3rem 0; }
 .padded-t-b-1 { padding: 1rem 0; }
 .padded-t-b-2 { padding: 2rem 0; }
+.padded-t-b    { 
+    padding-top: 5%; 
+    padding-bottom: 5%;   
+}
+
+.padded-l-r-5 {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.padded-l-r-10 {
+    padding-left: 10%;
+    padding-right: 10%;
+}
 
 .padded-t-0     { padding-top: 0; }
-.padded-t-1     { padding-top: 1rem; }
+.padded-b-0     { padding-bottom: 0; }
+
 .padded-t-05    { padding-top: 0.5rem; }
+.padded-b-05    { padding-bottom: 0.5rem; }
 .padded-l-05    { padding-left: 0.5rem; }
 .padded-r-05    { padding-right: 0.5rem; }
-.padded-b-0     { padding-bottom: 0; }
+
+.padded-t-1     { padding-top: 1rem; }
 .padded-b-1     { padding-bottom: 1rem; } 
 
 .border-l { border-left: 0.5px solid white; }
 .border-r { border-right: 0.5px solid white; }
 
+.border-l-dark { border-left: 1px solid #06112d; }
+.border-r-dark { border-right: 1px solid #06112d; }
+
+.border-light { border: 3px solid #e7f7fc; }
+
+
 .bg-featured { background-color:  #ffda14;  }
 .bg-dark     { background-color: #06112d;  }
-.bg-light     { background-color: #e7f7fc;  }
+.bg-light     { 
+    color: #06112d;
+    background-color: #e7f7fc;  
+}
+
 
 .subtle { 
     font-size: 0.8rem;
@@ -120,6 +149,7 @@ a { border: 1px solid orange; }
 
 .light-text { color: white; } 
 .featured-text { color: #ffda14;}
+
 
 .big-text    { 
     font-size: 5rem; 
@@ -140,15 +170,26 @@ a { border: 1px solid orange; }
     border: 1px solid #06112d;
     border-radius: 10px;
     padding: 2% 5%; 
-    color: white;
+    color: #e7f7fc;
     background-color: #06112d;
 }
 
-.square { background-size: 100%; }
+.button-dark {
+    border: 1px solid #e7f7fc;
+    border-radius: 10px;
+    padding: 2% 5%; 
+    color: #06112d;
+    background-color: #e7f7fc;
+}
 
 .button:hover {
     color: #06112d;
-    background-color: #e7f7fc;;
+    background-color: #e7f7fc;
+}
+
+.button-dark:hover {
+    color: #e7f7fc;
+    background-color: #06112d;
 }
 
 .logo {
@@ -162,6 +203,7 @@ a { border: 1px solid orange; }
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
+
 
 
 /* General typography & universal styles  */
@@ -253,8 +295,11 @@ footer a:hover {
 .bg-padded-2 { padding-bottom: 72%; }
 .bg-padded-portrait { padding-bottom: 100%; }
 .bg-padded-square { padding-bottom: 15%; }
+.bg-padded-20 { padding-bottom: 20%; }
 .bg-padded-30 { padding-bottom: 30%; }
 .bg-padded-90 { padding-bottom: 90%; }
+
+.square { background-size: 100%; }
 
 .bg-image {
     background-image: url('/images/underwater-2.jpg');
@@ -263,33 +308,44 @@ footer a:hover {
     background-repeat: no-repeat;
 }
 
-.divers { background-image: url('/images/divers.jpg'); }
-.map        { background-image: url('/images/map.png'); }  
-.snorkeling   { background-image: url('/images/snorkeling.jpg'); } 
-.freediving  { background-image: url('/images/freediving-1.jpg'); }  
-.scuba-tank   { background-image: url('/images/scuba-tank.jpg'); }  
-.jellyfish        { background-image: url('/images/jellyfish.jpg'); } 
-.jellyfish-2      { background-image: url('/images/jellyfish-2.jpg'); } 
-.yellow-fish    { background-image: url('/images/yellow-fish.jpg'); } 
-
-.underwater-1 { background-image: url('/images/underwater-1.jpg'); }
-.underwater-2 { background-image: url('/images/underwater-2.jpg'); }
-.underwater-3 { background-image: url('/images/underwater-3.jpg'); }
-.underwater-light { 
-    background-image: url('/images/underwater-light.jpg'); 
-    background-position: 50% 70%;
-}
-
-.catherine  { background-image: url('/images/Catherine.jpg'); }
-.tim        { background-image: url('/images/tim.jpg'); }  
-.hannah     { background-image: url('/images/Hannah.jpg'); }
-.girl       { background-image: url('/images/girl.jpg'); }
-.dive-buddies    { background-image: url('/images/dive-buddies.jpg'); }
 
 .bike { 
     background-image: url('/images/bike.jpg'); 
     background-position: 20% 70%;
 }
+
+.boat             { background-image: url('/images/boat-1.jpg'); }
+.catherine        { background-image: url('/images/Catherine.jpg'); }
+.cave             { background-image: url('/images/cave.jpg'); }
+.dive-buddies     { background-image: url('/images/dive-buddies.jpg'); }
+.divers           { background-image: url('/images/divers.jpg'); }
+.freediving       { background-image: url('/images/freediving-1.jpg'); } 
+.girl             { background-image: url('/images/girl.jpg'); }
+.hannah           { background-image: url('/images/Hannah.jpg'); }
+.island           { background-image: url('/images/island.jpg'); }
+.jellyfish        { background-image: url('/images/jellyfish.jpg'); } 
+.jellyfish-2      { background-image: url('/images/jellyfish-2.jpg'); } 
+.map              { background-image: url('/images/map.png'); }  
+.padi             { background-image: url('/images/padi.png'); }  
+.padi-chart       { background-image: url('/images/padi-chart.jpg'); }  
+.snorkeling       { background-image: url('/images/snorkeling.jpg'); } 
+.scuba-diver-1    { background-image: url('/images/scuba-diver-1.jpg');}
+.scuba-diver-2    { background-image: url('/images/scuba-diver-2.jpg');}
+.scuba-diver-3    { background-image: url('/images/scuba-diver-3.jpg');}
+.scuba-tank       { background-image: url('/images/scuba-tank.jpg'); }  
+.shipwreck        { background-image: url('/images/shipwreck.jpg'); }
+.tim              { background-image: url('/images/tim.jpg'); } 
+.underwater-1     { background-image: url('/images/underwater-1.jpg'); }
+.underwater-2     { background-image: url('/images/underwater-2.jpg'); }
+.underwater-3     { background-image: url('/images/underwater-3.jpg'); }
+
+.underwater-light { 
+    background-image: url('/images/underwater-light.jpg'); 
+    background-position: 50% 70%;
+}
+
+.yellow-fish     { background-image: url('/images/yellow-fish.jpg'); } 
+
 
 
 /* Contact form */
@@ -315,13 +371,23 @@ form textarea {
   resize: vertical;
 }
 
+.form-large form textarea { 
+    min-height: 10rem; 
+    resize: vertical;
+}
+
 form button {
   background-color: #06112d;;
   color: white;
-  border: none;
+  border: 1px solid #06112d;
   padding: 0.5rem 2rem;
   letter-spacing: 0.1em;
   margin: 0.5rem 0;
+}
+
+form button:hover {
+    background-color: white;
+    color: #06112d;
 }
 
 
