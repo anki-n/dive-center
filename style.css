@@ -401,6 +401,8 @@ form button:hover {
 /* SM   Max 768px 	_sm-* */
 @media (max-width: 48em) {
     .flex-flip-sm { flex-direction: column-reverse; }
+    .prices .border-l { border: none; }
+    .prices .border-r { border: none; }
 }
 
 /* XS  Max 576px 	_xs-*  */
