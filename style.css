@@ -398,3 +398,12 @@ form button:hover {
   @media (max-width: 80em)  Max 1280px  _lg-*
 */
 
+/* SM   Max 768px 	_sm-* */
+@media (max-width: 48em) {
+    .flex-flip-sm { flex-direction: column-reverse; }
+}
+
+/* XS  Max 576px 	_xs-*  */
+@media (max-width: 36em) {
+    .bg-padded-square { padding-bottom: 30%; }
+}
