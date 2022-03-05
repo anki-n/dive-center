@@ -293,6 +293,7 @@ footer a:hover {
 .bg-padded { padding-bottom: 50%; }
 .bg-padded-1 { padding-bottom: 74%; }
 .bg-padded-2 { padding-bottom: 72%; }
+.bg-padded-3 { padding-bottom: 62%; }
 .bg-padded-portrait { padding-bottom: 100%; }
 .bg-padded-square { padding-bottom: 15%; }
 .bg-padded-20 { padding-bottom: 20%; }
@@ -366,15 +367,16 @@ form textarea:focus {
   border-color: #06112d;
 }
 
-form textarea {
-  min-height: 4rem;
+form input {
+  min-height: 2rem;
   resize: vertical;
 }
 
-.form-large form textarea { 
-    min-height: 10rem; 
+form textarea {
+    min-height: 8rem;
     resize: vertical;
-}
+  }
+
 
 form button {
   background-color: #06112d;;
